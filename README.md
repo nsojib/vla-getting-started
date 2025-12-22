@@ -2,7 +2,7 @@
 
 ### Steps
 * Step 1: Collect and create demonstration dataset (.hdf5 file)
-* Step 2: Remove no-op and regenerate in higher resolution.
+* Step 2: [Remove no-op and regenerate in higher resolution.](step2_regenerate.md)
 * Step 3: Create rlds file from hdf5 file
 * Step 4: Create LeRobot file from step 3 generated file
 * Step 5: Prepare configuration for finetunning
