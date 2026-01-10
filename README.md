@@ -45,9 +45,10 @@ torchrun --standalone --nnodes 1 --nproc-per-node 1 vla-scripts/finetune.py \
 ```
 
 <b>Inference </b>
-
+```
 python experiments/robot/libero/run_libero_eval.py \
   --model_family openvla \
   --pretrained_checkpoint experiments/out_libero2/openvla-7b+libero_90_no_noops+b16+lr-0.0005+lora-r32+dropout-0.0--image_aug \
   --task_suite_name libero_90 \
   --center_crop True
+```
