@@ -22,3 +22,32 @@ python -m ipykernel install --user \
 
 libero_inf_1.ipynb
 ```
+
+<b>Openvla lora finetunning </b>
+
+Around 6.30hrs on a A40
+```
+torchrun --standalone --nnodes 1 --nproc-per-node 1 vla-scripts/finetune.py \
+  --vla_path "openvla/openvla-7b" \
+  --data_root_dir /home/ns1254/tensorflow_datasets \
+  --dataset_name libero_90_no_noops \
+  --run_root_dir /home/ns1254/openvla/experiments/out_libero2 \
+  --adapter_tmp_dir /home/ns1254/openvla/experiments/tmp2 \
+  --lora_rank 32 \
+  --batch_size 8 \
+  --grad_accumulation_steps 2 \
+  --learning_rate 5e-4 \
+  --image_aug True \
+  --wandb_project vla \
+  --wandb_entity openvla \
+  --save_steps 2000 \
+  --max_steps 8000
+```
+
+<b>Inference </b>
+
+python experiments/robot/libero/run_libero_eval.py \
+  --model_family openvla \
+  --pretrained_checkpoint experiments/out_libero2/openvla-7b+libero_90_no_noops+b16+lr-0.0005+lora-r32+dropout-0.0--image_aug \
+  --task_suite_name libero_90 \
+  --center_crop True
