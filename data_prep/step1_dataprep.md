@@ -1,0 +1,3 @@
+
+* LIVING_ROOM_SCENE6_put_the_red_mug_on_the_plate_demo.hdf5
+* LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_demo.hdf5
