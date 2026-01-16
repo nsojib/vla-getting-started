@@ -52,3 +52,8 @@ python experiments/robot/libero/run_libero_eval.py \
   --task_suite_name libero_90 \
   --center_crop True
 ```
+
+
+<b>Openpi</b>
+* hdf5 to rlds
+* rlds to libero
