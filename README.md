@@ -2,6 +2,8 @@
 
 Download vla ready rlds dataset for the two task from libero 90 [download](https://universitysystemnh-my.sharepoint.com/:u:/g/personal/ns1254_usnh_edu/IQCQMQd5R5IUTYfRT-alBUBSAfh_hGrBalfUbrq6UFxKnmY?download=1)
 
+[libero90rw.zip](https://universitysystemnh-my.sharepoint.com/:u:/g/personal/ns1254_usnh_edu/IQCwyQJISUjYTqyd_Jxspkf7AXrrqCcOPIrMc_xA24iuz_U?download=1)
+
 ### Steps
 * Step 1: [Collect and create demonstration dataset (.hdf5 file)](step1_dataprep.md)
 * Step 2: [Remove no-op and regenerate in higher resolution.](step2_regenerate.md)
